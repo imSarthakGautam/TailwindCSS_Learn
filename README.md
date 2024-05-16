@@ -21,7 +21,7 @@ Just in Time (JIT) compiler allows you to create new CSS class on the go.
 
 
 # Example :
-- <h1 class="text-center text-lg text-blue-400"> Hello world</h1>
+- < h1 class="text-center text-lg text-blue-400" > Hello world  </ h1>
 - -  is equivalent to :
 
 - .text-center {
