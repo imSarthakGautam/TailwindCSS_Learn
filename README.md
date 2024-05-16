@@ -4,7 +4,7 @@ and this README file consists of my rough notes.
 
 Tailwind CSS being the most used practices, This repo is/was created while I make/made switch to Tailwind CSS from Vanila CSS.
 
-# Utility Class 
+## Utility Class 
 Tailwind CSS classes can be categorized into:
 - Layout classes : Margin, padding, width, height
 - Typography classes : font size, font weight, text alignment
@@ -12,17 +12,19 @@ Tailwind CSS classes can be categorized into:
 - Flexbox and grid classes
 - Spacing classes
 
-- Using predefined utility classes might lead you to believe there are limited choices only, However it's not the case. In fact Tailwind is quite flexible in that context.
+Using predefined utility classes might lead you to believe there are limited choices only, However it's not the case. In fact Tailwind is quite flexible in that context.
 Just in Time (JIT) compiler allows you to create new CSS class on the go.
-- For Example: a font size of 13px is not a predefined Utility Class but using syntaxes and JIT we can  
+- For Example:
+ A font size of 13px is not a predefined Utility Class but using syntaxes and JIT we can  
 - font-[13px], square bracket
 
 - play.tailwindcss.com - A wonderful site that allows you to tally between the Tailwind CSS and the CSS you write.
 
 
-# Example :
+### Example :
 - < h1 class="text-center text-lg text-blue-400" > Hello world  </ h1>
-- -  is equivalent to :
+
+ is equivalent to :
 
 - .text-center {
   text-align: center;
@@ -43,15 +45,15 @@ Just in Time (JIT) compiler allows you to create new CSS class on the go.
 - text : for text related properties
 - bg : background
 
-- POSITION :
+### POSITION :
 - In normal CSS -- Position : absoulte, relative, fixed, sticky
 - In tailwind class="fixed"
 
-- DISPLAY :
+### DISPLAY :
 - flex, grid, block, inline, inline-block, none
-- In tailwind : for parent <div class="flex justify-center space-x-6" > #child1, #child2 </div>
+- In tailwind : for parent < div class="flex justify-center space-x-6" > #child1, #child2 < /div>
 
-- - MEDIA QUERIES
+### MEDIA QUERIES
 - Tailwind provides breakpoints
 - max-sm 640px (min-width: 640px)
 - max-md 768px (min-width: 768px)
@@ -60,12 +62,12 @@ Just in Time (JIT) compiler allows you to create new CSS class on the go.
 - max-2xl 1536px (min-width: 1536px)
 
 
-- - Modifiers
+### Modifiers
 - Indicate level or specific value,
 - sm-small,
 - lg-large,
 - 2xL- 2 extra large
 - hover for styles on hover
 
-- - Adding Properties 
+### Adding Properties 
 - m-2, text-center
