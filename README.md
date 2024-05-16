@@ -14,15 +14,15 @@ Tailwind CSS classes can be categorized into:
 
 Using predefined utility classes might lead you to believe there are limited choices only, However it's not the case. In fact Tailwind is quite flexible in that context.
 Just in Time (JIT) compiler allows you to create new CSS class on the go.
-- For Example:
+- **For Example:**
  A font size of 13px is not a predefined Utility Class but using syntaxes and JIT we can  
 - font-[13px], square bracket
 
-- play.tailwindcss.com - A wonderful site that allows you to tally between the Tailwind CSS and the CSS you write.
+- __play.tailwindcss.com__ - A wonderful site that allows you to tally between the Tailwind CSS and the CSS you write.
 
 
 ### Example :
-- < h1 class="text-center text-lg text-blue-400" > Hello world  </ h1>
+- __< h1 class="text-center text-lg text-blue-400" > Hello world  </ h1>__
 
  is equivalent to :
 
@@ -46,15 +46,15 @@ Just in Time (JIT) compiler allows you to create new CSS class on the go.
 - bg : background
 
 ### POSITION :
-- In normal CSS -- Position : absoulte, relative, fixed, sticky
-- In tailwind class="fixed"
+- In normal CSS -- **{ position : absoulte, relative, fixed, sticky }**
+- In tailwind **< class="fixed" >**
 
 ### DISPLAY :
 - flex, grid, block, inline, inline-block, none
 - In tailwind : for parent < div class="flex justify-center space-x-6" > #child1, #child2 < /div>
 
 ### MEDIA QUERIES
-- Tailwind provides breakpoints
+Tailwind provides breakpoints
 - max-sm 640px (min-width: 640px)
 - max-md 768px (min-width: 768px)
 - max-lg 1024px (min-width: 1024px)
@@ -63,7 +63,7 @@ Just in Time (JIT) compiler allows you to create new CSS class on the go.
 
 
 ### Modifiers
-- Indicate level or specific value,
+Indicate level or specific value,
 - sm-small,
 - lg-large,
 - 2xL- 2 extra large
