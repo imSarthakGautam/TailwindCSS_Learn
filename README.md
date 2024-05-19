@@ -20,7 +20,6 @@ Just in Time (JIT) compiler allows you to create new CSS class on the go.
 
 - [play.tailwindcss](https://play.tailwindcss.com) - A wonderful site that allows you to tally between the Tailwind CSS and the CSS you write.
 
-**_Copy the tailwind01.html into the above link and continue editing there_**
 
 
 ### Example :
