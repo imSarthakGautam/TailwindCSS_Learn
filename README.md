@@ -1,5 +1,5 @@
 # TailwindCSS_Learn
-This repository is a complitaion of my Tailwind CSS Learning Journey
+This repository is a complitaion of my Tailwind CSS Learning Journey.
 and this README file consists of my rough notes.
 
 Tailwind CSS being the most used practices, This repo is/was created while I make/made switch to Tailwind CSS from Vanila CSS.
@@ -18,7 +18,9 @@ Just in Time (JIT) compiler allows you to create new CSS class on the go.
  A font size of 13px is not a predefined Utility Class but using syntaxes and JIT we can  
 - font-[13px], square bracket
 
-- __play.tailwindcss.com__ - A wonderful site that allows you to tally between the Tailwind CSS and the CSS you write.
+- [play.tailwindcss](https://play.tailwindcss.com) - A wonderful site that allows you to tally between the Tailwind CSS and the CSS you write.
+
+**_Copy the tailwind01.html into the above link and continue editing there_**
 
 
 ### Example :
@@ -55,19 +57,75 @@ Just in Time (JIT) compiler allows you to create new CSS class on the go.
 
 ### MEDIA QUERIES
 Tailwind provides breakpoints
-- max-sm 640px (min-width: 640px)
+- sm 640px (min-width: 640px) _stying for screen width 640px or larger_ 
+**Note: Focus on the use of max**
+- max-sm 640px (min-width: 640px) _stying for screen width 640px or smaller_ 
 - max-md 768px (min-width: 768px)
 - max-lg 1024px (min-width: 1024px)
 - max-xl 1280px (min-width: 1280px)
 - max-2xl 1536px (min-width: 1536px)
-
 
 ### Modifiers
 Indicate level or specific value,
 - sm-small,
 - lg-large,
 - 2xL- 2 extra large
-- hover for styles on hover
 
 ### Adding Properties 
 - m-2, text-center
+
+### Use of Pseudo Classes
+Pseudo classes include hover,active, focus etc. So for ease just write down a pseudo Class followed by colon in TailwindCSS
+- < button class= " hover:bg-green " > Click Here < / button >
+
+### Styling for Dark mode
+For styling in dark mode, a utility class can be defined after 
+- < div class="**dark:_utilityClass_**" > Dark Styles < /div >
+- Also you need to make changes in module.exports adding { darkMode="class",}
+
+## Custom Styles
+### I- Square Bracket meth0d
+
+- **Color**
+< p class= " text -2xl text-[#973F29] bg-[#456A]" >
+
+- **Sizes**
+< p class="text-[12px]" >
+
+### II- Custom styles using Using Tailwind Config
+
+**Inside Config**
+ extend:{
+   colors : {
+      chestnut : '#973F2'
+    }
+ }
+
+_in Code_
+< p class=" text-chestnut bg-chestnut" >
+
+## Avoding Clutters :
+
+< div class="card" > < /div>
+_Here the card is not an ordinary className akin to Vanila CSS_
+
+**inside @tailwind components**
+@layer components {
+
+  .card {
+    @apply m-10 rounded-lg px-6 bg-blue shadow-xl
+  }
+}
+
+_Better to apply this for only complicated larger componets rather than for all_
+
+### III- Can use components libraries like
+- shadcn,
+- tailwind UI,
+- headless UI,
+
+
+### Notes :
+-using tailwind is not inline css
+-You don't need to remember all utility classes.
+
