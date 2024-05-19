@@ -103,6 +103,12 @@ For styling in dark mode, a utility class can be defined after
 _in Code_
 < p class=" text-chestnut bg-chestnut" >
 
+
+### III- Can use components libraries like
+- shadcn,
+- tailwind UI,
+- headless UI,
+
 ## Avoding Clutters :
 
 < div class="card" > < /div>
@@ -118,10 +124,6 @@ _Here the card is not an ordinary className akin to Vanila CSS_
 
 _Better to apply this for only complicated larger componets rather than for all_
 
-### III- Can use components libraries like
-- shadcn,
-- tailwind UI,
-- headless UI,
 
 
 ### Notes :
